@@ -1,3 +1,3 @@
 export default {
-  title: 'vue-link - <blink>'
+  title: 'vue-blink - <blink>'
 }
