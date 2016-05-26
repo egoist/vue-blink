@@ -31,6 +31,10 @@ NPMCDN: https://npmcdn.com/vue-blink/vue-blink.js
 </script>
 ```
 
+## Related
+
+- [react-blink](https://github.com/jossmac/react-blink) - Actually inspired by this module.
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist)
