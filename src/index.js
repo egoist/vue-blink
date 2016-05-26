@@ -15,14 +15,9 @@ export default {
     }
   },
   template: `<span :style="{visibility: visible ? 'visible' : 'hidden'}">{{ text }}</span>`,
-  created() {
-    this.blink()
-  },
-  methods: {
-    blink() {
-      this.timer = setInterval(() => {
-        this.visible = !this.visible
-      }, this.duration)
-    }
+  ready() {
+    this.timer = setInterval(() => {
+      this.visible = !this.visible
+    }, this.duration)
   }
 }
