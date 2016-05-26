@@ -21,7 +21,7 @@
 </style>
 
 <template>
-	<div class="app">
+  <div class="app">
     <h2 class="heading">
       That's right — <Blink text="<blink/>"></Blink> is back!
     </h2>

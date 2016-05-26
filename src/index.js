@@ -1,13 +1,13 @@
 export default {
-	props: {
-		text: {
-			type: String
-		},
-		duration: {
-			type: Number,
+  props: {
+    text: {
+      type: String
+    },
+    duration: {
+      type: Number,
       default: 530
-		}
-	},
+    }
+  },
   data() {
     return {
       visible: true,
