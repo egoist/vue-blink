@@ -1,4 +1,4 @@
-# vue-blink
+# vue-blink [![NPM version](https://img.shields.io/npm/v/vue-blink.svg)](https://npmjs.com/package/vue-blink) [![NPM downloads](https://img.shields.io/npm/dm/vue-blink.svg)](https://npmjs.com/package/vue-blink)
 
 You've been missing `<blink>` for so long, haven't you?
 
