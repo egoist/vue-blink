@@ -5,8 +5,9 @@
   "main": "index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
-    "test": "echo lol",
-    "build": "rolling ./src/index.js -o index.js",
+    "test": "npm run build:all",
+    "build:all": "npm run build:cjs && npm run build:umd",
+    "build:cjs": "rolling ./src/index.js -o index.js",
     "build:umd": "rolling ./src/index.js -o vue-blink.js --umd VueBlink",
     "example": "vbuild -e example/index.js --dev",
     "gh": "vbuild -e example/index.js && gh-pages -d dist"
