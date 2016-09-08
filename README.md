@@ -10,7 +10,7 @@ Wow, this component is really tiny, less than 200B when compressed!
 $ npm install -S vue-link
 ```
 
-NPMCDN: https://npmcdn.com/vue-blink/vue-blink.js
+NPMCDN: https://unpkg.com/vue-blink/vue-blink.js
 
 ## Usage
 
