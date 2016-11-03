@@ -6,8 +6,9 @@
   "scripts": {
     "test": "npm run build",
     "build": "bili ./src/index.js -o --format umd --module-name VueBlink",
-    "example": "vbuild example/index.js --dev --dist dist-example",
-    "gh": "vbuild example/index.js --dist dist-example && gh-pages -d dist-example"
+    "gh": "npm run play:build && gh-pages -d dist-play",
+    "play": "vue-play start",
+    "play:build": "vue-play build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
   "homepage": "https://github.com/egoist/vue-blink#readme",
   "devDependencies": {
     "bili": "^0.6.3",
-    "vbuild": "^3.1.4"
+    "vue-play": "^2.0.0",
+    "vue-play-cli": "^1.0.2"
   },
   "dependencies": {
     "vue": "^2.0.3"
