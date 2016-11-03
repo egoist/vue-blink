@@ -23,7 +23,7 @@
 <template>
   <div class="app">
     <h2 class="heading">
-      That's right — <Blink text="<blink/>"></Blink> is back!
+      That's right — <Blink>&lt;blink/&gt;</Blink> is back!
     </h2>
     <footer class="footer">
       <a href="https://github.com/egoist/vue-blink">

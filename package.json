@@ -2,24 +2,19 @@
   "name": "vue-blink",
   "version": "0.1.1",
   "description": "You've been missing <blink /> for so long.",
-  "main": "index.js",
-  "jsnext:main": "src/index.js",
+  "main": "dist/vue-blink.js",
   "scripts": {
-    "test": "npm run build:all",
-    "build:all": "npm run build:cjs && npm run build:umd",
-    "build:cjs": "rolling ./src/index.js -o index.js",
-    "build:umd": "rolling ./src/index.js -o vue-blink.js --umd VueBlink",
-    "example": "vbuild -e example/index.js --dev",
-    "gh": "vbuild -e example/index.js && gh-pages -d dist"
+    "test": "npm run build",
+    "build": "bili ./src/index.js -o --format umd --module-name VueBlink",
+    "example": "vbuild example/index.js --dev --dist dist-example",
+    "gh": "vbuild example/index.js --dist dist-example && gh-pages -d dist-example"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/egoist/vue-blink.git"
   },
   "files": [
-    "index.js",
-    "vue-blink.js",
-    "src"
+    "dist"
   ],
   "keywords": [
     "vue-component",
@@ -32,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/egoist/vue-blink/issues"
   },
-  "homepage": "https://github.com/egoist/vue-blink#readme"
+  "homepage": "https://github.com/egoist/vue-blink#readme",
+  "devDependencies": {
+    "bili": "^0.6.3",
+    "vbuild": "^3.1.4"
+  },
+  "dependencies": {
+    "vue": "^2.0.3"
+  }
 }

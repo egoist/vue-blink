@@ -1,8 +1,5 @@
 export default {
   props: {
-    text: {
-      type: String
-    },
     duration: {
       type: Number,
       default: 530
@@ -14,10 +11,15 @@ export default {
       timer: null
     }
   },
-  template: `<span :style="{visibility: visible ? 'visible' : 'hidden'}">{{ text }}</span>`,
-  ready() {
+  mounted() {
     this.timer = setInterval(() => {
       this.visible = !this.visible
     }, this.duration)
+  },
+  render(h) {
+    const style = {
+      visibility: this.visible ? 'visible' : 'hidden'
+    }
+    return h('span', {style}, this.$slots.default)
   }
 }

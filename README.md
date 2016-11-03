@@ -10,14 +10,14 @@ Wow, this component is really tiny, less than 200B when compressed!
 $ npm install -S vue-link
 ```
 
-NPMCDN: https://unpkg.com/vue-blink/vue-blink.js
+NPMCDN: https://unpkg.com/vue-blink/dist/vue-blink.js
 
 ## Usage
 
 ```html
 <template>
   <div class="app">
-    <Blink text="can you see me?"></Blink>
+    <Blink>can you see me?</Blink>
   </div>
 </template>
 
