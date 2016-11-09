@@ -21,5 +21,8 @@ export default {
       visibility: this.visible ? 'visible' : 'hidden'
     }
     return h('span', {style}, this.$slots.default)
+  },
+  beforeDestroy() {
+    clearInterval(this.timer)
   }
 }
