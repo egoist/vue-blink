@@ -1,6 +1,6 @@
 {
   "name": "vue-blink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "You've been missing <blink /> for so long.",
   "main": "dist/vue-blink.js",
   "scripts": {
