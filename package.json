@@ -31,6 +31,7 @@
   "homepage": "https://github.com/egoist/vue-blink#readme",
   "devDependencies": {
     "bili": "^0.6.3",
+    "gh-pages": "^0.11.0",
     "vue-play": "^2.0.0",
     "vue-play-cli": "^1.0.2"
   },
