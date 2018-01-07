@@ -7,7 +7,7 @@ You've been missing `<blink>` for so long, haven't you?
 Wow, this component is really tiny, less than 200B when compressed!
 
 ```bash
-$ npm install -S vue-link
+$ npm install -S vue-blink
 ```
 
 NPMCDN: https://unpkg.com/vue-blink/dist/vue-blink.js
